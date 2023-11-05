@@ -1,0 +1,458 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL STYLES STARTS HERE */
+
+body {
+    background-color: #FDFAD9;
+    font-family: 'Inter', sans-serif;
+    line-height: normal;
+
+}
+
+h1 {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Playpen Sans', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.title-style {
+    background-color: #FDFAD9;
+    width: 120px; 
+    height: 50px; /* Set the desired height */
+    margin: 0 auto;
+    border-radius: 20px;
+    
+    
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; 
+    margin-bottom: 20px;   
+}
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style:normal; 
+    
+}
+
+img {
+    transform: scale(1);
+    transition: transform 0.2s ease-out; 
+}  
+
+img:hover{
+    transform: scale(1.2);
+}  
+
+:root{
+    --bs-blue: #D2E9FA;
+    --bs-white: #fff;
+          
+}
+/* GENERAL STYLES ENDS HERE */
+
+/* MOBILE STYLES FOR HEADER STARTS HERE */
+
+
+.banner-blue{
+    background-image: url(./images/banner_767_x_200.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 300px;  
+}
+
+
+.navbar {
+    padding-top: 50px;
+    padding-right:20px;   
+}
+
+
+@media (max-width: 767px) { /* MOBILE STYLES FOR SPECIFIC ELEMENTS */
+
+.logo-style{
+    order:-1;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.dropdown {
+    order: 2;
+    margin: 0 auto;
+}
+
+.dropdown-menu .dropdown-item {
+    padding-right: 105px;
+   
+}
+
+
+}
+
+.bg-body-tertiary{
+    --bs-bg-opacity: 0;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;    
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-button i {
+    font-size: 1.2rem; /* Adjust the size of the icon as needed */
+    color: #FB8989; /* Adjust the color of the icon */
+}
+
+.form-control {
+    padding-right: 150px; /* Ensure space for the icon */
+    margin-left: 50px;
+    border: 2px solid #FB8989;      
+}
+
+.dropdown button {
+    background-color: #FB8989;
+    border: 2px solid #FB8989;    
+}
+
+.dropdown button:hover,
+.dropdown button:active { 
+    background-color: #FDFAD9;
+    color: black;
+}
+
+.larger-dropdown-button {
+ padding-right: 30px; 
+}
+
+.dropdown-image {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.dropdown-toggle {
+    color: var(--bs-white);
+}
+
+.dropdown button:hover {
+    background-color: red;
+    color: white;
+}
+
+.dropdown a:active{
+    background-color: #FB8989;    
+}
+
+/* MOBILE STYLES FOR HEADER ENDS HERE */
+
+/* card styles section*/
+
+
+.container{
+    margin-top: -200px;  /* margin of the cards container */
+}
+
+
+.card{  /* general card */
+     
+    background: transparent;
+    border: none;
+}
+
+/* card style for bulvasaur, IVYSAUR and VENUSAUR starts*/
+
+.card-0001 {
+    background-image: url(./images/Group_3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 150px;  
+}
+
+
+.info-style {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.btn-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  
+
+.catch-green a {
+    background-color: #7CB16F;
+    border: 2px solid #7CB16F;
+    color: white;
+}
+
+.catch-green a.btn:hover,
+.catch-green a.btn:active
+ {
+    background-color: darkgreen;
+    color: white; 
+}
+
+/* card style for bulvasaur, IVYSAUR and VENUSAUR ends*/
+
+/* card style for Charmander, Charmeleon and Charizard starts*/
+.card-0002 {
+    background-image: url(./images/Group_4.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 150px;  
+}
+.info-style {
+    display: flex;
+    justify-content:space-around;
+}
+.btn-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+.catch-red a {
+    background-color: #FB8989;
+    border: 2px solid #FB8989;
+    color: white;
+}
+.catch-red a.btn:hover,
+.catch-red a.btn:active
+ {
+    background-color: red;
+    color: white; 
+}
+/* card style for Charmander, Charmeleon and Charizard Ends*/
+
+/* card style for squirtle, Wartortle starts*/
+.card-0003 {
+    background-image: url(./images/Group_5.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 150px;  
+}
+.info-style {
+    display: flex;
+    justify-content:space-around;
+}
+.btn-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+.catch-blue a {
+    background-color: #4834D4;
+    border: 2px solid #4834D4;
+    color: white;
+}
+.catch-blue a.btn:hover,
+.catch-blue a.btn:active
+ {
+    background-color: darkblue;
+    color: white; 
+}
+/* card style for squirtle, Wartortle ends*/
+
+/* LOAD MORE POKEMON BUTTON STYLES STARTS HERE*/
+
+.button-load {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.button-load a{
+    background-color: #8A7BF7;
+    border: 2px solid #8A7BF7;
+    color: white;
+}
+
+.button-load a.btn:hover,
+.button-load a.btn:active {
+    background-color: darkblue;
+    color: white; 
+}
+/* LOAD MORE POKEMON BUTTON STYLES ENDS HERE*/
+
+/* FOOTER STYLES FOR MOBILE STARTS HERE */
+
+.banner-footer{
+    background-image: url(./images/banner_2-767_x_200.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 200px;  
+}
+
+
+
+/* DESKTOP STYLES START HERE */
+
+@media screen and (min-width: 768px) {
+
+ /* DESKTOP STYLES FOR HEADER STARTS HERE */
+    .banner-blue{
+        background-image: url(./images/banner_1536_x_300.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding-bottom: 300px;   
+    }
+     .search-container {
+        display: flex;
+        align-items: center;
+        order:3;
+        
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        
+    }
+    .dropdown {
+        order: -1;
+    }  
+    .dropdown-menu {
+        margin-left: 30px;
+        padding-right: 90px; 
+       
+    }
+    .navbar .dropdown button {
+        margin-left: 30px;
+    }
+    .dropdown-toggle {
+        color: var(--bs-white);
+    }
+    .dropdown button {
+        background-color: #FB8989;
+        border: 2px solid #FB8989;    
+    }
+    .dropdown{
+        margin-left: 100px;
+        padding-right: 50px;
+    }
+    .dropdown button:hover {
+        background-color: red;
+        color: white;
+    }
+
+     /* DESKTOP STYLES FOR HEADER ENDS HERE */
+
+     /*section cards styles starts */
+
+    .container{
+        margin-top: -50px; /* margin of the cards container */
+    }
+
+    /* card style for bulvasaur, IVYSAUR and VENUSAUR starts*/
+    .card-0001 { 
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 50px; 
+    } 
+    /* card style for bulvasaur, IVYSAUR and VENUSAUR ends*/
+
+    /* card style for Charmander, Charmeleon and Charizard starts*/
+    .card-0002 { 
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin-left: 50px;
+        } 
+
+   
+
+    /* card style for Charmander, Charmeleon and Charizard ends*/
+    
+    /* card style for squirtle, Wartortle starts*/
+    .card-0003 { 
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin-left: 50px;
+        } 
+
+     /* card style for squirtle, Wartortle ends*/   
+
+     /*section cards styles ends*/
+
+    /* DESKTOP STYLES FOR FOOTER STARTS HERE */
+
+    .banner-footer{
+        background-image: url(./images/banner_2-1536_x_300.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding-top: 200px;  
+    }
+
+
+
+}

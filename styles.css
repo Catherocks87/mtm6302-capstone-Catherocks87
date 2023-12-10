@@ -59,7 +59,7 @@ body {
 h1 {
     font-family: 'Playpen Sans', cursive;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2rem; 
     margin-top: 30px;
 }
 
@@ -69,6 +69,7 @@ h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: var(--bs-blue);
 }
 
 .title-style {
@@ -104,8 +105,9 @@ img:hover{
 }  
 
 :root{
-    --bs-blue: #D2E9FA;
+   
     --bs-white: #fff;
+    --bs-blue: #4834D4;
           
 }
 /* GENERAL STYLES ENDS HERE */
@@ -117,7 +119,7 @@ img:hover{
     background-image: url(./images/banner_767_x_200.png);
     background-repeat: no-repeat;
     background-size: auto;
-    padding-bottom: 300px;  
+    padding-bottom: 250px;  
 }
 
 
@@ -127,7 +129,7 @@ img:hover{
 }
 
 
-@media (max-width: 767px) { /* MOBILE STYLES FOR SPECIFIC ELEMENTS */
+@media (max-width: 720px) { /* MOBILE STYLES FOR SPECIFIC ELEMENTS */
 
 .logo-style{
     order:-1;
@@ -147,6 +149,8 @@ img:hover{
 
 
 }
+
+/* MOBILE STYLES FOR SPECIFIC ELEMENTS FINISH */
 
 .bg-body-tertiary{
     --bs-bg-opacity: 0;
@@ -221,6 +225,7 @@ img:hover{
 
 .container{
     margin-top: -200px;  /* margin of the cards container */
+    
 }
 
 
@@ -230,13 +235,21 @@ img:hover{
     border: none;
 }
 
-/* card style for bulvasaur, IVYSAUR and VENUSAUR starts*/
+/* card style for bulbasaur starts*/
 
 .card-0001 {
-    background-image: url(./images/Group_3.png);
+    background-image: url(./images/Group_1.png);
     background-repeat: no-repeat;
     background-size: auto;
     padding-bottom: 150px;  
+}
+
+.bulb-style img {
+
+    width: 100%;
+    max-width: 13rem;
+    cursor: pointer;
+
 }
 
 
@@ -255,75 +268,20 @@ img:hover{
   
 
 .catch-green a {
-    background-color: #7CB16F;
-    border: 2px solid #7CB16F;
+    background-color: #2B72B9;
+    border: 2px solid #2B72B9;
     color: white;
 }
 
 .catch-green a.btn:hover,
 .catch-green a.btn:active
  {
-    background-color: darkgreen;
+    background-color: #8A7BF7;
     color: white; 
 }
 
-/* card style for bulvasaur, IVYSAUR and VENUSAUR ends*/
+/* card style for bulbasaur ends*/
 
-/* card style for Charmander, Charmeleon and Charizard starts*/
-.card-0002 {
-    background-image: url(./images/Group_4.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding-bottom: 150px;  
-}
-.info-style {
-    display: flex;
-    justify-content:space-around;
-}
-.btn-icon {
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-.catch-red a {
-    background-color: #FB8989;
-    border: 2px solid #FB8989;
-    color: white;
-}
-.catch-red a.btn:hover,
-.catch-red a.btn:active
- {
-    background-color: red;
-    color: white; 
-}
-/* card style for Charmander, Charmeleon and Charizard Ends*/
-
-/* card style for squirtle, Wartortle starts*/
-.card-0003 {
-    background-image: url(./images/Group_5.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding-bottom: 150px;  
-}
-.info-style {
-    display: flex;
-    justify-content:space-around;
-}
-.btn-icon {
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-.catch-blue a {
-    background-color: #4834D4;
-    border: 2px solid #4834D4;
-    color: white;
-}
-.catch-blue a.btn:hover,
-.catch-blue a.btn:active
- {
-    background-color: darkblue;
-    color: white; 
-}
-/* card style for squirtle, Wartortle ends*/
 
 /* LOAD MORE POKEMON BUTTON STYLES STARTS HERE*/
 
@@ -346,6 +304,67 @@ img:hover{
 }
 /* LOAD MORE POKEMON BUTTON STYLES ENDS HERE*/
 
+/*MODAL CSS STYLES*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-image: url(./images/modal_card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #8A7BF7;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color:#4834D4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-title {
+    text-align: center;
+    color: #8A7BF7;
+}
+
+.modal-info {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
 /* FOOTER STYLES FOR MOBILE STARTS HERE */
 
 .banner-footer{
@@ -356,10 +375,9 @@ img:hover{
 }
 
 
-
 /* DESKTOP STYLES START HERE */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 721px) {
 
  /* DESKTOP STYLES FOR HEADER STARTS HERE */
     .banner-blue{
@@ -420,28 +438,9 @@ img:hover{
     background-size: auto;
     margin-left: 50px; 
     } 
-    /* card style for bulvasaur, IVYSAUR and VENUSAUR ends*/
-
-    /* card style for Charmander, Charmeleon and Charizard starts*/
-    .card-0002 { 
-        background-repeat: no-repeat;
-        background-size: auto;
-        margin-left: 50px;
-        } 
+    /* card style for bulbasaur/
 
    
-
-    /* card style for Charmander, Charmeleon and Charizard ends*/
-    
-    /* card style for squirtle, Wartortle starts*/
-    .card-0003 { 
-        background-repeat: no-repeat;
-        background-size: auto;
-        margin-left: 50px;
-        } 
-
-     /* card style for squirtle, Wartortle ends*/   
-
      /*section cards styles ends*/
 
     /* DESKTOP STYLES FOR FOOTER STARTS HERE */
@@ -452,6 +451,7 @@ img:hover{
         background-size: auto;
         padding-top: 200px;  
     }
+
 
 
 
